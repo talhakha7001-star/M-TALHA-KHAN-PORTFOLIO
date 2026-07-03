@@ -16,12 +16,18 @@
 <meta property="og:description" content="Full Stack Web Developer &amp; SEO Specialist building fast, search-ready websites that convert visitors into customers." />
 <meta property="og:url" content="https://mtalhakhan.dev/" />
 <meta property="og:site_name" content="M Talha Khan — Portfolio" />
+<meta property="og:image" content="https://mtalhakhan.dev/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_US" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="M Talha Khan | Full Stack Web Developer &amp; SEO Expert" />
 <meta name="twitter:description" content="Full Stack Web Developer &amp; SEO Specialist building fast, search-ready websites that convert visitors into customers." />
+<meta name="twitter:image" content="https://mtalhakhan.dev/og-image.jpg" />
 
+<meta name="theme-color" content="#0A0E17" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235EEAD4'/%3E%3Cstop offset='1' stop-color='%23818CF8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='%230B0F19'/%3E%3Ctext x='50' y='66' font-family='Arial' font-weight='700' font-size='46' fill='url(%23g)' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,10 +39,23 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "M Talha Khan",
+  "alternateName": "Talha Khan",
   "jobTitle": "Full Stack Web Developer & SEO Specialist",
+  "description": "Full Stack Web Developer and SEO Specialist building fast, responsive websites and data-driven SEO campaigns.",
   "url": "https://mtalhakhan.dev/",
+  "image": "https://mtalhakhan.dev/og-image.jpg",
   "email": "mailto:talhakha7001@mail.com",
-  "sameAs": [],
+  "telephone": "+92-314-2068143",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Karachi",
+    "addressRegion": "Sindh",
+    "addressCountry": "PK"
+  },
+  "sameAs": [
+    "https://github.com/talhakha7001-star",
+    "https://www.fiverr.com/talha_develop1?public_mode=true"
+  ],
   "knowsAbout": ["Full Stack Web Development", "Search Engine Optimization", "Technical SEO", "WordPress Development", "React", "PHP", "MySQL"],
   "worksFor": {
     "@type": "Organization",
@@ -49,7 +68,23 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "M Talha Khan Portfolio",
-  "url": "https://mtalhakhan.dev/"
+  "url": "https://mtalhakhan.dev/",
+  "publisher": {
+    "@type": "Person",
+    "name": "M Talha Khan"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mtalhakhan.dev/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://mtalhakhan.dev/#services" },
+    { "@type": "ListItem", "position": 3, "name": "Projects", "item": "https://mtalhakhan.dev/#projects" },
+    { "@type": "ListItem", "position": 4, "name": "Contact", "item": "https://mtalhakhan.dev/#contact" }
+  ]
 }
 </script>
 
@@ -265,7 +300,9 @@ html[data-theme="light"] .icon-sun{display:block;}
   display:flex;align-items:center;justify-content:center;font-family:var(--font-display);
   font-size:3rem;font-weight:700;color:var(--text);
   animation:spin-rev 14s linear infinite;
+  overflow:hidden;
 }
+.avatar-inner img{width:100%;height:100%;object-fit:cover;border-radius:50%;}
 @keyframes spin-rev{to{transform:rotate(-360deg);}}
 
 .code-window{
@@ -566,9 +603,10 @@ footer{border-top:1px solid var(--border);padding:56px 0 32px;}
 
     <div class="hero-visual">
       <div class="avatar-ring" aria-hidden="true">
-        <div class="avatar-inner">MTK</div>
+        <div class="avatar-inner">
+          <img src="/images/m-talha-khan-full-stack-developer-seo-expert.jpg" alt="M Talha Khan - Full Stack Web Developer and SEO Expert" width="190" height="190" loading="eager" fetchpriority="high" onerror="this.style.display='none';this.parentElement.textContent='MTK';">
+        </div>
       </div>
-      <!-- Profile photo placeholder: replace .avatar-inner content with <img src="your-photo.jpg" alt="M Talha Khan"> -->
       <div class="code-window reveal" id="codeWindow">
         <div class="code-topbar">
           <span class="code-dot" style="background:#FF6159"></span>
@@ -852,9 +890,9 @@ footer{border-top:1px solid var(--border);padding:56px 0 32px;}
           <div><span>Call</span><strong>+92 314 2068143</strong></div>
         </a>
       </div>
-  
 
-      <form class="contact-form"
+
+      <form class="contact-form" id="contactForm"
       action="https://formsubmit.co/talhakha7001@gmail.com"
       method="POST">
 
@@ -865,7 +903,7 @@ footer{border-top:1px solid var(--border);padding:56px 0 32px;}
     <input type="hidden" name="_subject" value="New Portfolio Contact Message">
 
     <!-- Redirect after submit -->
-    <input type="hidden" name="_next" value="https://talhakha7001-star.github.io/M-TALHA-KHAN-PORTFOLIO/">
+    <input type="hidden" name="_next" value="">
 
     <div class="form-row">
         <label for="cf-name">Name</label>
@@ -893,7 +931,7 @@ footer{border-top:1px solid var(--border);padding:56px 0 32px;}
 </form>
 
 
-      
+
     </div>
   </div>
 </section>
@@ -911,11 +949,8 @@ footer{border-top:1px solid var(--border);padding:56px 0 32px;}
         </div>
       </div>
       <div class="social-row" aria-label="Social media">
-        <a class="social-btn" href="#" aria-label="LinkedIn">in</a>
-        <a class="social-btn" href="https://github.com/talhakha7001-star" aria-label="GitHub">gh</a>
-        <a class="social-btn" href="#" aria-label="X / Twitter">tw</a>
-        <a class="social-btn" href="#" aria-label="Instagram">ig</a>
-        <a class="social-btn" href="https://www.fiverr.com/talha_develop1?public_mode=true" aria-label="Fiverr" >fv</a>
+        <a class="social-btn" href="https://github.com/talhakha7001-star" aria-label="GitHub" target="_blank" rel="noopener">gh</a>
+        <a class="social-btn" href="https://www.fiverr.com/talha_develop1?public_mode=true" aria-label="Fiverr" target="_blank" rel="noopener">fv</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -1097,17 +1132,9 @@ footer{border-top:1px solid var(--border);padding:56px 0 32px;}
   /* ---------- Footer year ---------- */
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  /* ---------- Contact form -> mailto ---------- */
-  var form = document.getElementById('contactForm');
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    var name = document.getElementById('cf-name').value.trim();
-    var email = document.getElementById('cf-email').value.trim();
-    var msg = document.getElementById('cf-msg').value.trim();
-    var subject = encodeURIComponent('Project inquiry from ' + name);
-    var body = encodeURIComponent(msg + '\n\n— ' + name + ' (' + email + ')');
-    window.location.href = 'mailto:talhakha7001@mail.com?subject=' + subject + '&body=' + body;
-  });
+  /* Note: contact form submits natively via formsubmit.co action above.
+     No JS override needed — a duplicate mailto: handler here would
+     conflict with the real POST submission and was removed. */
 })();
 </script>
 </body>
